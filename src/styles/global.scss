@@ -1,0 +1,31 @@
+// Import Bootstrap
+@import "/node_modules/bootstrap/scss/bootstrap.scss";
+
+// Import Google fonts: Poppins
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+html,
+body {
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+  transition: all 0.5s;
+  background-color: $gray-100;
+}
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}
+
+.shadow {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1) !important;
+}
+
+.content {
+  padding-top: 64px;
+  height: calc(100vh - 64px);
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}

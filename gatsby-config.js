@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: "My Portfolio",
+    siteUrl: "https://google.com"
   },
   plugins: [
     "gatsby-plugin-netlify-cms",
