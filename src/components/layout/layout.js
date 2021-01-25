@@ -1,12 +1,12 @@
-import * as React from "react";
+import React from "react";
 import Header from "../header/header";
 import Footer from "../footer/footer";
 import "./layout.scss";
 
-const Layout = ({ children }) => {
+const Layout = ({ children }) => {  
   return (
-    <>
-      <Header></Header>
+    <>      
+      <Header></Header>      
       <main>
         <div className="container">{children}</div>
       </main>

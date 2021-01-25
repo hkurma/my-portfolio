@@ -2,8 +2,8 @@ import * as React from "react";
 
 const Contact = () => {
   return (
-    <div id="contact">
-      <div className="content">Contact</div>
+    <div id="contact" className="content">
+      <div className="heading">Contact</div>
     </div>
   );
 };
