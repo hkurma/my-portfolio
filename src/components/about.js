@@ -54,6 +54,7 @@ const About = () => {
                         </p>
                         <Fade right={true}>
                             <Img
+                                className="float-right"
                                 fixed={data.sign.childImageSharp.fixed}
                                 alt="Harish Kurma"
                             />
