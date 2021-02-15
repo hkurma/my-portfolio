@@ -10,12 +10,12 @@ module.exports = {
         "gatsby-plugin-react-helmet",
         "gatsby-plugin-sitemap",
         "gatsby-plugin-offline",
-        // {
-        //   resolve: "gatsby-plugin-manifest",
-        //   options: {
-        //     icon: "static/images/icon.png",
-        //   },
-        // },
+        {
+            resolve: "gatsby-plugin-manifest",
+            options: {
+                icon: "static/images/icon.png"
+            }
+        },
         "gatsby-transformer-remark",
         "gatsby-transformer-sharp",
         {
