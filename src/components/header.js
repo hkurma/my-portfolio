@@ -12,7 +12,7 @@ const Header = () => {
 
     useEffect(() => {
         let currentHour = new Date().getHours();
-        if (currentHour >= 18) toggleDarkMode();
+        if (currentHour <= 6 || currentHour >= 18) toggleDarkMode();
     }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
     return (
