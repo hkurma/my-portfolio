@@ -7,9 +7,9 @@ const Projects = () => {
             <div className="container">
                 <h1 className="heading">Projects</h1>
                 <div className="container">
-                    <p className="lead text-center">
-                        <Shake>Coming Soon!</Shake>
-                    </p>
+                    <Shake>
+                        <p className="lead text-center">Coming Soon!</p>
+                    </Shake>
                 </div>
             </div>
         </section>
