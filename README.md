@@ -34,7 +34,8 @@ At this point, the site should be up and running. To access it navigate to `http
 
 ## What's Next
 
--   Favicon
+-   Title/SEO
 -   Projects
 -   PWA
 -   Footer
+-   Signature
