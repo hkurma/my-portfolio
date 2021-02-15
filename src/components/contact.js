@@ -13,10 +13,10 @@ const Contact = () => {
                         href="https://www.linkedin.com/in/harish-kurma-9083b7149"
                         rel="noreferrer"
                     >
-                        <i class="fab fa-linkedin"></i>
+                        <i className="fab fa-linkedin"></i>
                     </a>
                     <a href="mailto:hkurma0504@gmail.com">
-                        <i class="far fa-envelope"></i>
+                        <i className="far fa-envelope"></i>
                     </a>
                 </div>
             </div>
