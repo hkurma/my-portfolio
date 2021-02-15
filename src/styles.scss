@@ -1,0 +1,52 @@
+$primary: #20c997;
+$enable-rounded: false;
+$enable-shadows: true;
+$enable-gradients: true;
+$enable-responsive-font-sizes: true;
+
+// Import Bootstrap
+@import "/node_modules/bootstrap/scss/bootstrap.scss";
+
+// Import Google fonts: Poppins
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+html,
+body {
+    font-family: "Poppins", sans-serif;
+    min-height: 100vh;
+    background-color: var(--light);
+    color: var(--dark);
+    font-weight: 300;
+    &.dark {
+        background-color: var(--dark);
+        color: var(--light);
+    }
+}
+
+.btn {
+    transition: all 0.5s;
+    &:hover {
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+    }
+    &:focus {
+        box-shadow: none !important;
+        outline: none !important;
+    }
+    &.btn-outline-light {
+        &:hover {
+            color: var(--dark);
+        }
+    }
+    &.btn-outline-dark {
+        &:hover {
+            color: var(--light);
+        }
+    }
+}
+
+.heading {
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-weight: bold;
+}

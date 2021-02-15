@@ -1,0 +1,12 @@
+#about {
+    background-color: var(--primary);
+    color: var(--white);
+    padding-top: 2rem;
+    padding-bottom: 20vh;
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 20vh), 0 100%);
+    .img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

@@ -1,38 +1,38 @@
 module.exports = {
-  siteMetadata: {
-    title: "My Portfolio",
-    siteUrl: "https://google.com"
-  },
-  plugins: [
-    "gatsby-plugin-netlify-cms",
-    "gatsby-plugin-sass",
-    "gatsby-plugin-sharp",
-    "gatsby-plugin-react-helmet",
-    "gatsby-plugin-sitemap",
-    "gatsby-plugin-offline",
-    {
-      resolve: "gatsby-plugin-manifest",
-      options: {
-        icon: "static/images/icon.png",
-      },
+    siteMetadata: {
+        title: "My Portfolio",
+        siteUrl: "https://hkurma.netlify.com"
     },
-    "gatsby-transformer-remark",
-    "gatsby-transformer-sharp",
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        name: "images",
-        path: "./static/images/",
-      },
-      __key: "images",
-    },
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        name: "pages",
-        path: "./src/pages/",
-      },
-      __key: "pages",
-    },
-  ],
+    plugins: [
+        "gatsby-plugin-netlify-cms",
+        "gatsby-plugin-sass",
+        "gatsby-plugin-sharp",
+        "gatsby-plugin-react-helmet",
+        "gatsby-plugin-sitemap",
+        "gatsby-plugin-offline",
+        // {
+        //   resolve: "gatsby-plugin-manifest",
+        //   options: {
+        //     icon: "static/images/icon.png",
+        //   },
+        // },
+        "gatsby-transformer-remark",
+        "gatsby-transformer-sharp",
+        {
+            resolve: "gatsby-source-filesystem",
+            options: {
+                name: "images",
+                path: "./static/images/"
+            },
+            __key: "images"
+        },
+        {
+            resolve: "gatsby-source-filesystem",
+            options: {
+                name: "pages",
+                path: "./src/pages/"
+            },
+            __key: "pages"
+        }
+    ]
 };
