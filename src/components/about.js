@@ -8,7 +8,14 @@ import Fade from "react-reveal/Fade";
 const About = () => {
     const data = useStaticQuery(graphql`
         query {
-            file(relativePath: { eq: "me.jpeg" }) {
+            me: file(relativePath: { eq: "me.jpeg" }) {
+                childImageSharp {
+                    fixed(width: 320) {
+                        ...GatsbyImageSharpFixed
+                    }
+                }
+            }
+            sign: file(relativePath: { eq: "signature.png" }) {
                 childImageSharp {
                     fixed(width: 320) {
                         ...GatsbyImageSharpFixed
@@ -27,14 +34,14 @@ const About = () => {
                             <Fade bottom={true}>
                                 <Img
                                     className="shadow-lg"
-                                    fixed={data.file.childImageSharp.fixed}
+                                    fixed={data.me.childImageSharp.fixed}
                                     alt="Harish Kurma"
                                 />
                             </Fade>
                         </Tilt>
                     </div>
                     <div className="offset-md-1 col-md-7">
-                        <p>
+                        <p className="mb-5">
                             Lorem ipsum dolor sit amet, consectetur adipiscing
                             elit, sed do eiusmod tempor incididunt ut labore et
                             dolore magna aliqua. Ut enim ad minim veniam, quis
@@ -45,6 +52,12 @@ const About = () => {
                             cupidatat non proident, sunt in culpa qui officia
                             deserunt mollit anim id est laborum.
                         </p>
+                        <Fade right={true}>
+                            <Img
+                                fixed={data.sign.childImageSharp.fixed}
+                                alt="Harish Kurma"
+                            />
+                        </Fade>
                     </div>
                 </div>
             </div>
