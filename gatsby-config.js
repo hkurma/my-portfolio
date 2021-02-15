@@ -13,6 +13,12 @@ module.exports = {
         {
             resolve: "gatsby-plugin-manifest",
             options: {
+                name: `Harish Kurma`,
+                short_name: `HK`,
+                start_url: `/`,
+                background_color: `#343a40`,
+                theme_color: `#20c997`,
+                display: `standalone`,
                 icon: "static/images/icon.png"
             }
         },
