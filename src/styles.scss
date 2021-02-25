@@ -42,6 +42,11 @@ body {
             color: var(--light);
         }
     }
+    &.btn-link {
+        &:hover {
+            box-shadow: none !important;
+        }
+    }
 }
 
 .heading {

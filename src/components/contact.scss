@@ -4,15 +4,14 @@
     padding-top: 20vh;
     padding-bottom: 2rem;
     clip-path: polygon(0 20vh, 100% 0, 100% 100%, 0 100%);
-}
-
-a {
-    color: var(--white);
-    transition: all 0.5s;
-    i {
-        font-size: 2rem;
-        margin-left: 1rem;
-        margin-right: 1rem;
-        cursor: pointer;
+    a {
+        color: var(--white);
+        transition: all 0.5s;
+        i {
+            font-size: 2rem;
+            margin-left: 1rem;
+            margin-right: 1rem;
+            cursor: pointer;
+        }
     }
 }
