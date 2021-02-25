@@ -1,4 +1,5 @@
 import React from "react";
+import "./projects.scss";
 import { graphql, useStaticQuery } from "gatsby";
 import Img from "gatsby-image";
 import Tilt from "react-tilt";
@@ -41,7 +42,7 @@ const Projects = () => {
             });
     };
     return (
-        <section id="projects">
+        <section id="projects" className="py-5">
             <div className="container">
                 <h1 className="heading">Projects</h1>
                 <div className="container">
