@@ -14,11 +14,11 @@ const Home = () => {
                             Hi, I'm&nbsp;
                             <span className="text-primary">Harish Kurma</span>
                         </h1>
-                        <h1 className="font-weight-bold">
+                        <h2 className="font-weight-bold">
                             <Typist avgTypingDelay={100}>
                                 Software Engineer by profession and passion.
                             </Typist>
-                        </h1>
+                        </h2>
                     </div>
                 </Fade>
                 <Fade right={true}>
