@@ -6,7 +6,7 @@ const Contact = () => {
         <section id="contact">
             <div className="container">
                 <h1 className="heading">Contact</h1>
-                <div className="container text-center">
+                <div className="container text-center mb-5">
                     <p className="mb-5">Let's get connected!</p>
                     <a
                         target="_blank"
