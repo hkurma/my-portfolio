@@ -1,6 +1,7 @@
 import * as React from "react";
 import SEO from "../components/seo";
 import Header from "../components/header";
+import Footer from "../components/footer";
 
 const Layout = ({ children }) => {
     return (
@@ -8,6 +9,7 @@ const Layout = ({ children }) => {
             <SEO></SEO>
             <Header></Header>
             <main>{children}</main>
+            <Footer></Footer>
         </>
     );
 };
