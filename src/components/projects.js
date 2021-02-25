@@ -1,5 +1,4 @@
 import React from "react";
-import "./projects.scss";
 import { graphql, useStaticQuery } from "gatsby";
 import Img from "gatsby-image";
 import Tilt from "react-tilt";
