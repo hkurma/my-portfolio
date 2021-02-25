@@ -5,7 +5,7 @@ const Footer = () => {
         <footer className="p-3">
             <div className="container">
                 <div className="row">
-                    <div className="col-md">
+                    <div className="col-md-auto text-center mb-3">
                         Powered by{" "}
                         <a
                             href="https://www.gatsbyjs.com/"
@@ -15,7 +15,8 @@ const Footer = () => {
                             Gatsby
                         </a>
                     </div>
-                    <div className="col-md-auto">
+                    <div className="col-md"></div>
+                    <div className="col-md-auto text-center mb-3">
                         Icons by{" "}
                         <a
                             href="https://fontawesome.com/"
