@@ -31,7 +31,3 @@ $ gatsby develop
 ```
 
 At this point, the site should be up and running. To access it navigate to `http://localhost:8000/`
-
-## What's Next
-
--   Footer
