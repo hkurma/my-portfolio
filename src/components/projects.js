@@ -40,13 +40,16 @@ const Projects = () => {
                 return node.childImageSharp.fluid;
             });
     };
+    const navigate = (url) => {
+        window.open(url, "_blank", "noopener,noreferrer");
+    };
     return (
         <section id="projects" className="py-5">
             <div className="container">
                 <h1 className="heading">Projects</h1>
                 <div className="container">
                     {projects.map((project, index) => (
-                        <div className="row py-5">
+                        <div className="row py-5" key={index}>
                             <div
                                 className={
                                     "col-md-4 mb-5 text-center " +
@@ -73,25 +76,21 @@ const Projects = () => {
                                     {project.title}
                                 </h3>
                                 <p className="mb-5">{project.description}</p>
-                                <a
+                                <button
                                     type="button"
                                     className="btn btn-outline-primary mr-3"
-                                    target="_blank"
-                                    href={project.url}
-                                    rel="noreferrer"
+                                    onClick={() => navigate(project.url)}
                                 >
                                     Check it out
-                                    <i class="fas fa-long-arrow-alt-right ml-2"></i>
-                                </a>
-                                <a
+                                    <i className="fas fa-long-arrow-alt-right ml-2"></i>
+                                </button>
+                                <button
                                     type="button"
                                     className="btn btn-link"
-                                    target="_blank"
-                                    href={project.source}
-                                    rel="noreferrer"
+                                    onClick={() => navigate(project.source)}
                                 >
                                     Source
-                                </a>
+                                </button>
                             </div>
                         </div>
                     ))}
