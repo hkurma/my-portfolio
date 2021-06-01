@@ -16,10 +16,10 @@ module.exports = {
                 name: `Harish Kurma`,
                 short_name: `HK`,
                 start_url: `/`,
-                background_color: `#20c997`,
-                theme_color: `#20c997`,
+                background_color: `#17a2b8`,
+                theme_color: `#17a2b8`,
                 display: `standalone`,
-                icon: "static/images/icon.png"
+                icon: "static/images/logo.png"
             }
         },
         "gatsby-transformer-remark",

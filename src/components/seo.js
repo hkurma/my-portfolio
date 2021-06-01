@@ -5,7 +5,7 @@ const SEO = () => {
     const metadata = {
         title: "Harish Kurma",
         description: "Static portfolio site generated using GatsbyJS",
-        image: "images/icon.png",
+        image: "images/logo.png",
         url: "https://hkurma.netlify.com"
     };
 
