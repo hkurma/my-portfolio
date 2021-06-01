@@ -42,15 +42,24 @@ const About = () => {
                     </div>
                     <div className="offset-md-1 col-md-7">
                         <p className="mb-5">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit, sed do eiusmod tempor incididunt ut labore et
-                            dolore magna aliqua. Ut enim ad minim veniam, quis
-                            nostrud exercitation ullamco laboris nisi ut aliquip
-                            ex ea commodo consequat. Duis aute irure dolor in
-                            reprehenderit in voluptate velit esse cillum dolore
-                            eu fugiat nulla pariatur. Excepteur sint occaecat
-                            cupidatat non proident, sunt in culpa qui officia
-                            deserunt mollit anim id est laborum.
+                            Hello! Thanks for stopping by to take a look at my
+                            portfolio. I'm Harish Kurma, Software Engineer by
+                            profession for more than 5 years. I did my Master's
+                            in Computer and Information Sciences from Kent State
+                            University, Ohio, United States. I have a great
+                            passion and interest towards application development
+                            from my Bachelor's, which drived me towards pursing
+                            Master's and then helped me to land in my dream job.
+                            I love to explore new techologies and work on
+                            hobby/pet projects. Developed web/mobile
+                            applications for various clients I have worked with.
+                            My dream is to create a consumer facing product that
+                            will be used by a large scale of users and I'm
+                            working towards it.
+                            <br />
+                            <br />
+                            <br />
+                            Thank you!
                         </p>
                         <Fade right={true}>
                             <Img

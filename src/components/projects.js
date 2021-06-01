@@ -27,10 +27,18 @@ const Projects = () => {
         {
             title: "My Portfolio",
             description:
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                "A Static Website created using GatsbyJS, a ReactJS based Static Website Generator. It is my portfolio website to showcase my hobby projects and to learn more about me. This website has a light/dark mode which can be toggled, but defaults to appropriate theme based on the local time. It is hosted on Netlify and use Netlify CMS to manage content. Also, this application can be downloaded as a Progressive Web App (PWA) on supported mobile devices.",
             url: "https://hkurma.netlify.app",
             source: "https://github.com/hkurma/my-portfolio",
             image: "my-portfolio"
+        },
+        {
+            title: "Recurr",
+            description:
+                "A Progressive Web Application (PWA) to manage recurring tasks and receive notifications on the schedules day. Built using React JS (Typescript) and used Firebase as Backend as a Service for Authentication and Realtime Database. Firebase Cloud Functions and Messaging is used for sending out notifications to the user. User's can login using their Google account and start creating recurring tasks to receive notifications on the scheduled day.",
+            url: "https://recurr-1a3ba.firebaseapp.com",
+            source: "https://github.com/hkurma/recurr",
+            image: "recurr"
         }
     ];
     const getImage = (name) => {
@@ -53,7 +61,9 @@ const Projects = () => {
                             <div
                                 className={
                                     "col-md-4 mb-5 text-center " +
-                                    (index % 2 === 1 ? "order-2" : "order-1")
+                                    (index % 2 === 1
+                                        ? "offset-md-1  order-2"
+                                        : "order-1")
                                 }
                             >
                                 <Tilt>
@@ -68,8 +78,10 @@ const Projects = () => {
                             </div>
                             <div
                                 className={
-                                    "offset-md-1 col-md-7 " +
-                                    (index % 2 === 1 ? "order-1" : "order-2")
+                                    "col-md-7 " +
+                                    (index % 2 === 1
+                                        ? "order-1"
+                                        : "offset-md-1  order-2")
                                 }
                             >
                                 <h3 className="text-primary mb-3">
