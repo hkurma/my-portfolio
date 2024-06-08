@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ['latin'] });
 export const metadata: Metadata = {
   title: 'Harish Kurma (hkurma)',
   description:
-    'Harish Kurma (hkurma), Software Engineer by profession and passion.',
+    'Harish Kurma (hkurma), Software Engineer by profession and passion. Portfolio site built using NextJS and TailwindCSS.',
 };
 
 const RootLayout = ({
