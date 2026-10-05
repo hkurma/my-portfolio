@@ -94,9 +94,6 @@ function showDay(animate) {
 	}
 
 	setTimeout(() => {
-		document.getElementById("dayText").classList.remove("hidden");
-		document.getElementById("nightText").classList.add("hidden");
-
 		document.getElementById("moon").classList.add("hidden");
 		document.getElementById("sun").classList.remove("hidden");
 
@@ -120,9 +117,6 @@ function showNight(animate) {
 	}
 
 	setTimeout(() => {
-		document.getElementById("nightText").classList.remove("hidden");
-		document.getElementById("dayText").classList.add("hidden");
-
 		document.getElementById("sun").classList.add("hidden");
 		document.getElementById("moon").classList.remove("hidden");
 

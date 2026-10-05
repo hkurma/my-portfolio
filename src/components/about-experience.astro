@@ -1,22 +1,69 @@
 ---
-const { logo, dates, role, company, description } = Astro.props;
+interface Role {
+  title: string;
+  start: string;
+  end: string;
+}
+interface Props {
+  company: string;
+  type: string;
+  location: string;
+  workplace: string;
+  start: string;
+  end: string;
+  roles: Role[];
+}
+const { company, type, location, workplace, start, end, roles } = Astro.props;
+const initials = company
+  .split(" ")
+  .map((word) => word[0])
+  .join("");
 ---
 
-<div class="relative flex flex-col justify-start pl-12">
-  <div
-    class="absolute top-0 left-0 z-40 flex items-center justify-center -translate-x-1/2 bg-white border rounded-full dark:bg-neutral-950 w-14 h-14 border-neutral-300 dark:border-neutral-700"
-  >
-    <img src={logo} alt={company} class="w-8 h-8" />
+<div
+  class="p-6 border rounded-2xl border-neutral-300 dark:border-neutral-700"
+>
+  <div class="flex flex-col gap-4 sm:flex-row sm:items-start">
+    <div
+      class="flex items-center justify-center flex-shrink-0 w-12 h-12 text-sm font-semibold border border-dashed rounded-full text-neutral-700 border-neutral-300 dark:text-neutral-200 dark:border-neutral-700"
+    >
+      {initials}
+    </div>
+    <div class="flex-1">
+      <h3 class="text-lg font-semibold text-neutral-900 dark:text-neutral-100">
+        {company}
+      </h3>
+      <p class="text-sm text-neutral-500 dark:text-neutral-400">
+        {type} · {workplace} · {location}
+      </p>
+    </div>
+    <p
+      class="text-sm font-medium text-neutral-500 whitespace-nowrap dark:text-neutral-400"
+    >
+      {start} – {end}
+    </p>
   </div>
 
-  <p
-    class="text-xs uppercase text-neutral-400 dark:text-neutral-500 trackign-widest"
-  >
-    {dates}
-  </p>
-  <h3 class="my-1 text-lg font-bold dark:text-neutral-100">{role}</h3>
-  <p class="mb-1 text-sm font-medium dark:text-neutral-300">{company}</p>
-  <p class="text-sm font-light text-neutral-600 dark:text-neutral-400">
-    {description}
-  </p>
+  <ol class="mt-6">
+    {
+      roles.map((role, i) => (
+        <li class="relative flex gap-4">
+          <div class="relative flex justify-center flex-shrink-0 w-12">
+            {i < roles.length - 1 && (
+              <span class="absolute left-1/2 top-[11px] -bottom-[11px] w-px -translate-x-1/2 bg-neutral-300 dark:bg-neutral-700" />
+            )}
+            <span class="relative z-10 mt-1.5 w-2.5 h-2.5 rounded-full bg-neutral-900 dark:bg-white" />
+          </div>
+          <div class:list={[i < roles.length - 1 && "pb-6"]}>
+            <h4 class="font-medium text-neutral-900 dark:text-neutral-100">
+              {role.title}
+            </h4>
+            <p class="text-sm text-neutral-500 dark:text-neutral-400">
+              {role.start} – {role.end}
+            </p>
+          </div>
+        </li>
+      ))
+    }
+  </ol>
 </div>
